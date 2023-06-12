@@ -1,0 +1,59 @@
+﻿@model Flower
+@{
+    ViewData["Title"] = "AddNewFlower";
+}
+
+<h1>AddNewFlower</h1>
+
+<center>
+        <h1>Add New Flower Form:</h1>
+        <br />
+        <hr />
+        <br />
+        <form method="post" asp-action="AddFlower" asp-controller="FlowerList">
+            <table border="1">
+                <tr>
+                    <th><label asp-for = "FlowerName"></label> </th>
+                    <td>
+                        <input asp-for = "FlowerName" />
+                        <span asp-validation-for="FlowerName"></span>
+                    </td>
+                </tr>
+
+            <tr>
+                <th><label asp-for="FlowerType"></label> </th>
+                <td>
+                    <input asp-for="FlowerType" />
+                    <span asp-validation-for="FlowerType"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label asp-for="FlowerPurchasedDate"></label> </th>
+                <td>
+                    <input asp-for="FlowerPurchasedDate" />
+                    <span asp-validation-for="FlowerPurchasedDate"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label asp-for="FlowerPrice"></label> </th>
+                <td>
+                    <input asp-for="FlowerPrice" />
+                    <span asp-validation-for="FlowerPrice"></span>
+                </td>
+            </tr>
+            
+            <tr>
+               
+                <td>
+                    <td colspan="2" style="text-align:center">
+                    <br />
+                        <button class="btn-outline-dark">Add New Flower</button>
+                    </td>
+                </td>
+            </tr>
+
+            </table>
+        </form>
+</center>

@@ -1,0 +1,45 @@
+﻿@model List<Flower>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Flower List:</h1>
+<br />
+<hr />
+<br />
+<a asp-action="AddNewFlower" asp-controller="FlowerList"> Add New Flower </a> 
+<br />
+<hr />
+<form>
+    <label>Enter the flower search string:</label> &nbsp;
+    <input type="text" name="searchString" placeholder="e.g. Water">
+    <button class="btn-outline-dark" type="submit">Search String</button>
+    <br />
+</form>
+<br />
+<table border="1" class="table">
+    <tr style="background-color:lightcyan">
+        <th>Flower ID </th>
+        <th>Flower Name </th>
+        <th>Flower Type </th>
+        <th>Flower Price </th>
+        <th>Flower Produced Date </th>
+        <th>Edit Action</th>
+        <th>Delete Action</th>
+    </tr>
+    @foreach(var singleflower in Model)
+    {
+        <tr>
+            <td>@singleflower.FlowerId</td>
+            <td>@singleflower.FlowerName</td>
+            <td>@singleflower.FlowerType</td>
+            <td>@singleflower.FlowerPrice</td>
+            <td>@singleflower.FlowerPurchasedDate</td>
+
+            <form method="post">
+            <td><button class="btn-info" asp-action="editpage" asp-route-fid="@singleflower.FlowerId">Edit</button></td>
+            <td><button class="btn-info" asp-action="deletepage" asp-route-fid="@singleflower.FlowerId">Delete</button></td>
+            </form>
+        </tr>
+    }
+</table>

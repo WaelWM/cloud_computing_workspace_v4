@@ -1,0 +1,63 @@
+﻿@model Flower
+@{
+	ViewData["Title"] = "editpage";
+}
+<h1>editpage</h1>
+
+<center>
+	<h1>Edit Flower Information Page:</h1>
+	<br />
+	<hr />
+	<br />
+	<form asp-action="updatepage" asp-controller="FlowerList">
+		<table border="1" class="table">
+			<tr>
+				<th style="background-color:aquamarine" >
+					<label asp-for="FlowerId"></label>
+				</th>
+				<td>
+					<input asp-for="FlowerId" readonly />
+				</td>
+			</tr>
+			<tr>
+				<th style="background-color:aquamarine">
+					<label asp-for="FlowerName"></label>
+				</th>
+				<td>
+					<input asp-for="FlowerName" placeholder="e.g. Sunflower" />
+					<span asp-validation-for="FlowerName"></span>
+				</td>
+			</tr>
+			<tr>
+				<th style="background-color:aquamarine">
+					<label asp-for="FlowerType"></label>
+				</th>
+				<td>
+					<input asp-for="FlowerType" placeholder="e.g. Food" />
+					<span asp-validation-for="FlowerType"></span>
+				</td>
+			</tr>
+			<tr>
+				<th style="background-color:aquamarine">
+					<label asp-for="FlowerPurchasedDate"></label>
+				</th>
+				<td>
+					<input asp-for="FlowerPurchasedDate" placeholder="e.g. 8/8/2023" />
+					<span asp-validation-for="FlowerPurchasedDate"></span>
+				</td>
+			</tr>
+			<tr>
+				<th style="background-color:aquamarine">
+					<label asp-for="FlowerPrice"></label>
+				</th>
+				<td>
+					<input asp-for="FlowerPrice" placeholder="e.g. 6.50" />
+					<span asp-validation-for="FlowerPrice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center"><button class="btn-outline-dark">Update</button></td>
+			</tr>
+		</table>
+	</form>
+</center>
