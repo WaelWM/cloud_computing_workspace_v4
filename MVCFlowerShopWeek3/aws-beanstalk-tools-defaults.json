@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Debug",
+    "framework"     : "net7.0",
+    "self-contained" : true,
+    "application"    : "MVCFlowerShopWeek3",
+    "environment"    : "MVCFlowerShopWeek3-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-0a5ab3c3c4b172448,sg-0161642e5fdde88a8\";\"aws:ec2:vpc,Subnets\"=\"subnet-07a37fc56671d646f\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.5.4 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "mvcflowershopweek3-dev",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "php_example",
+    "instance-profile"     : "LabInstanceProfile",
+    "service-role"         : "LabRole",
+    "proxy-server"         : "nginx"
+}
