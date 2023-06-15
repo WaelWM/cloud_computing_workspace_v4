@@ -282,3 +282,6 @@ C:\Users\ASUS\Desktop\Semester 2\Lab\DDAC\MVCFlowerShopWeek3\MVCFlowerShopWeek3\
 C:\Users\ASUS\Desktop\Semester 2\Lab\DDAC\MVCFlowerShopWeek3\MVCFlowerShopWeek3\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ASUS\Desktop\Semester 2\Lab\DDAC\MVCFlowerShopWeek3\MVCFlowerShopWeek3\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ASUS\Desktop\Semester 2\Lab\DDAC\MVCFlowerShopWeek3\MVCFlowerShopWeek3\obj\Debug\net7.0\MVCFlowerShopWeek3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Desktop\Semester 2\Lab\DDAC\MVCFlowerShopWeek3\MVCFlowerShopWeek3\bin\Debug\net7.0\aws-beanstalk-tools-defaults.json
+C:\Users\ASUS\Desktop\Semester 2\Lab\DDAC\MVCFlowerShopWeek3\MVCFlowerShopWeek3\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\ASUS\Desktop\Semester 2\Lab\DDAC\MVCFlowerShopWeek3\MVCFlowerShopWeek3\bin\Debug\net7.0\AWSSDK.S3.dll
